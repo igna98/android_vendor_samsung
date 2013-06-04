@@ -63,3 +63,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/system/lib/modules/gememalloc.ko:system/lib/modules/gememalloc.ko \
     vendor/samsung/bcm21553-common/proprietary/system/lib/modules/h6270enc.ko:system/lib/modules/h6270enc.ko \
     vendor/samsung/bcm21553-common/proprietary/system/lib/modules/hx170dec.ko:system/lib/modules/hx170dec.ko 
+	
+# Smoothening +gpu touchrendering 
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/system/etc/init.d/01-GPU_touchrender:system/etc/init.d/01-GPU_touchrender \
+    vendor/samsung/bcm21553-common/proprietary/system/lib/libncurses.so:system/lib/libncurses.so \
+    vendor/samsung/bcm21553-common/proprietary/system/usr/idc/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc   	
