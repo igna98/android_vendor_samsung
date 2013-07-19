@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
 
 # Apns config file
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/samsung/bcm21553-common/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # GPS
 PRODUCT_COPY_FILES += \
