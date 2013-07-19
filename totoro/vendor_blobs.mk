@@ -25,5 +25,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/system/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/totoro/proprietary/system/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/totoro/proprietary/system/lib/libcaps.so:system/lib/libcaps.so
-
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)

@@ -24,5 +24,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/cooperve/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so
-
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
