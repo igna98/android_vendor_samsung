@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
+
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/system/lib/libarccamera.so:system/lib/libarccamera.so \
