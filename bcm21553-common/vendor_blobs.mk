@@ -18,6 +18,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+    vendor/samsung/bcm21553-common/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml
+
+#Vold
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/etc/vold.conf:system/etc/vold.conf \
+    vendor/samsung/bcm21553-common/proprietary/etc/vold.fstab:system/etc/vold.fstab
 
 # Apns config file
 PRODUCT_COPY_FILES += \
@@ -68,13 +74,19 @@ PRODUCT_COPY_FILES += \
 # Smoothening + GPU touch rendering 
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/init.d/01-GPU_touchrender:system/etc/init.d/01-GPU_touchrender \
-    vendor/samsung/bcm21553-common/proprietary/lib/libncurses.so:system/lib/libncurses.so \
     vendor/samsung/bcm21553-common/proprietary/usr/idc/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc
 
 # HGL
 PRODUCT_COPY_FILES += \
     vendor/alcatel/bcm21553-common/proprietary/lib/egl/libGLES_hgl.so:system/lib/egl/libGLES_hgl.so
 
+#USB
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/etc/usb_tether.sh:system/etc/usb_tether.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
+    vendor/samsung/bcm21553-common/proprietary/etc/usbconfig.sh:system/etc/usbconfig.sh \
+    
+    
 # Gralloc
 PRODUCT_COPY_FILES += \
     vendor/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
