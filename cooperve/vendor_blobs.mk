@@ -26,4 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/cooperve/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/cooperve/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so
+    vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/cooperve/proprietary/lib/libmmcamera_statsproc30.so:system/lib/libmmcamera_statsproc30.so \
+    vendor/samsung/cooperve/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
+    vendor/samsung/cooperve/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so
