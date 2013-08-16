@@ -68,7 +68,8 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so
+    vendor/samsung/bcm21553-common/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
+    vendor/samsung/bcm21553-common/proprietary/bin/rild:system/bin/rild
 
 # Drivers
 PRODUCT_COPY_FILES += \
