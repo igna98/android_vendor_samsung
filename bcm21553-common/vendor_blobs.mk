@@ -22,11 +22,11 @@ PRODUCT_COPY_FILES += \
 
 # Alcatel Audio
 PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so
 
 # Vold
 PRODUCT_COPY_FILES += \
@@ -96,37 +96,37 @@ PRODUCT_COPY_FILES += \
 
 # Gralloc
 PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
-#    vendor/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.bcm21553.so:system/lib/hw/gralloc.bcm21553.so
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
+#    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.bcm21553.so:system/lib/hw/gralloc.bcm21553.so
 
 # Alcatel libstatgefright
 PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libdrmagent_jni.so:system/lib/libdrmagent_jni.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_amrnb_common.so:system/lib/libstagefright_amrnb_common.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_color_conversion.so:system/lib/libstagefright_color_conversion.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_enc_common.so:system/lib/libstagefright_enc_common.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_foundation.so:system/lib/libstagefright_foundation.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libdrmagent_jni.so:system/lib/libdrmagent_jni.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright.so:system/lib/libstagefright.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright_amrnb_common.so:system/lib/libstagefright_amrnb_common.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright_color_conversion.so:system/lib/libstagefright_color_conversion.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright_enc_common.so:system/lib/libstagefright_enc_common.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright_foundation.so:system/lib/libstagefright_foundation.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so
 
 # Broadcom OMX
 PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libBRCM_omx_core.so:system/lib/libBRCM_omx_core.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libBRCM_omx_core_plugin.so:system/lib/libBRCM_omx_core_plugin.so
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libBRCM_omx_core.so:system/lib/libBRCM_omx_core.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libBRCM_omx_core_plugin.so:system/lib/libBRCM_omx_core_plugin.so
 
 # Alcatel encode / decode libs
 PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libandroid_servers.so:system/lib/libandroid_servers.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libEGL.so:system/lib/libEGL.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libGLESv2.so:system/lib/libGLESv2.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libsurfaceflinger.so:system/lib/libsurfaceflinger.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libui.so:system/lib/libui.so
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libandroid_servers.so:system/lib/libandroid_servers.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libEGL.so:system/lib/libEGL.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libGLESv2.so:system/lib/libGLESv2.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libsurfaceflinger.so:system/lib/libsurfaceflinger.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libui.so:system/lib/libui.so
 
 # Alcatel HQ
 PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libshoppervorbisencoder-2.so:system/lib/libshoppervorbisencoder-2.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libshopperimageutils-3.so:system/lib/libshopperimageutils-3.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libshopperzxingutils-4.so:system/lib/libshopperzxingutils-4.so
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libshoppervorbisencoder-2.so:system/lib/libshoppervorbisencoder-2.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libshopperimageutils-3.so:system/lib/libshopperimageutils-3.so \
+    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/libshopperzxingutils-4.so:system/lib/libshopperzxingutils-4.so
