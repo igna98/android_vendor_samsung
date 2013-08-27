@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \
 
 # Gralloc
 PRODUCT_COPY_FILES += \
-    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
+    vendor/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
 #    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.bcm21553.so:system/lib/hw/gralloc.bcm21553.so
 
 # Alcatel libstatgefright
