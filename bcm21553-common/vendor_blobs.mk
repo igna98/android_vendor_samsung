@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
     vendor/samsung/bcm21553-common/proprietary/lib/libsoc.so:system/lib/libsoc.so \
 
+# Apns config file
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Sensores
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so \
