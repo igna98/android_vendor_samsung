@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
+$(call inherit-product, vendor/samsung/cooperve/vendor.mk)
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -26,10 +26,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/cooperve/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/cooperve/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/cooperve/proprietary/lib/libmmcamera_statsproc30.so:system/lib/libmmcamera_statsproc30.so \
-    vendor/samsung/cooperve/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
-    vendor/samsung/cooperve/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so
+    vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so
+
+# Device sensores
+PRODUCT_COPY_FILES += \
+    vendor/samsung/cooperve/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
+    vendor/samsung/cooperve/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
 # Offline 320 x 240 charging
 PRODUCT_COPY_FILES += \

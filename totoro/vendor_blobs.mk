@@ -28,6 +28,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/totoro/proprietary/lib/libcaps.so:system/lib/libcaps.so
 
+# Device sensores
+PRODUCT_COPY_FILES += \
+    vendor/samsung/totoro/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
+    vendor/samsung/totoro/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+
 # Offline charging
 PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \

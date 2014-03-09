@@ -33,6 +33,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/vold.conf:system/etc/vold.conf \
     vendor/samsung/bcm21553-common/proprietary/etc/vold.fstab:system/etc/vold.fstab
 
+# Sensores
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/libaccsensorcal.so:system/lib/libaccsensorcal.so \
+    vendor/samsung/bcm21553-common/proprietary/bin/memsicd:system/bin/memsicd
+
 # GPS
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so \
@@ -46,14 +52,6 @@ PRODUCT_COPY_FILES += \
 # Apns config file
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-
-# Sensores
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libaccsensorcal.so:system/lib/libaccsensorcal.so \
-    vendor/samsung/bcm21553-common/proprietary/bin/memsicd:system/bin/memsicd
 
 # Wifi
 PRODUCT_COPY_FILES += \
