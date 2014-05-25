@@ -14,19 +14,19 @@
 
 
 # Audio 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/bcm21553-common/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+#    vendor/samsung/bcm21553-common/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+#    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
+#    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so
 
 # Alcatel Audio
-PRODUCT_COPY_FILES += \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so
+#PRODUCT_COPY_FILES += \
+#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
+#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
+#    vendor/alcatel/bcm21553-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so
 
 # Vold
 PRODUCT_COPY_FILES += \
@@ -95,7 +95,6 @@ PRODUCT_COPY_FILES += \
 # Gralloc
 PRODUCT_COPY_FILES += \
     vendor/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so
-#    vendor/samsung/alcatel/bcm21553-common/proprietary/lib/hw/gralloc.bcm21553.so:system/lib/hw/gralloc.bcm21553.so
 
 # Alcatel libstatgefright
 PRODUCT_COPY_FILES += \
