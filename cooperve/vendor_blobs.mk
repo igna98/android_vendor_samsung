@@ -57,8 +57,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
     vendor/samsung/cooperve/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/cooperve/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    vendor/samsung/cooperve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg \
-    vendor/samsung/cooperve/proprietary/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/cooperve/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/cooperve/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
-    vendor/samsung/cooperve/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
+    vendor/samsung/cooperve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg

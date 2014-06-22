@@ -60,8 +60,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/tassve/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
     vendor/samsung/tassve/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/tassve/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    vendor/samsung/tassve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg \
-    vendor/samsung/tassve/proprietary/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/tassve/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/tassve/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
-    vendor/samsung/tassve/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
+    vendor/samsung/tassve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg

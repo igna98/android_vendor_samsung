@@ -1,8 +1,6 @@
 Proprietary files for BCM21553 device
 =====================================
 
-Note: tassve, totoro, cori need to update his libs!
-
 Currently devices supported:
 
   * Galaxy Ace i - (GT-S5830i)

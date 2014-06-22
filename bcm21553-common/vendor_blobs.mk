@@ -14,29 +14,21 @@
 
 
 # Audio 
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/bcm21553-common/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-#    vendor/samsung/bcm21553-common/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-#    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
-#    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so
 
 # Alcatel Audio
-#PRODUCT_COPY_FILES += \
-#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
-#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
-#    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-#    vendor/alcatel/bcm21553-common/proprietary/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so
-
-# Vold
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/etc/vold.conf:system/etc/vold.conf \
-    vendor/samsung/bcm21553-common/proprietary/etc/vold.fstab:system/etc/vold.fstab
+    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:system/lib/libaudio.so \
+    vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
+    vendor/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so
 
 # Sensores
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libaccsensorcal.so:system/lib/libaccsensorcal.so \
     vendor/samsung/bcm21553-common/proprietary/bin/memsicd:system/bin/memsicd
 
 # GPS
@@ -55,13 +47,15 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/bcm4330_aps.bin:system/etc/wifi/bcm4330_aps.bin \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/nvram.txt:system/etc/wifi/nvram.txt
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_aps.bin:system/etc/firmware/bcm4330_aps.bin \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_sta.bin:system/etc/firmware/bcm4330_sta.bin \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/bin/BCM4330B1_002.001.003.0634.0652.hcd:system/bin/BCM4330B1_002.001.003.0634.0652.hcd
+    vendor/samsung/bcm21553-common/proprietary/bin/BCM4330B1_002.001.003.0634.0652.hcd:system/bin/BCM4330B1_002.001.003.0634.0652.hcd \
+    vendor/samsung/bcm21553-common/proprietary/lib/bluez-plugin/audio.so:system/lib/bluez-plugin/audio.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/bluez-plugin/input.so:system/lib/bluez-plugin/input.so \
 
 # RIL
 PRODUCT_COPY_FILES += \
@@ -69,24 +63,44 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
     vendor/samsung/bcm21553-common/proprietary/bin/rild:system/bin/rild
 
-# Drivers
+# Driver modules
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/bcm_headsetsw.ko:system/lib/modules/bcm_headsetsw.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/bcm_headsetsw.ko:system/lib/modules/brcm_headsetsw.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/brcm_switch.ko:system/lib/modules/brcm_switch.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/gememalloc.ko:system/lib/modules/gememalloc.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/h6270enc.ko:system/lib/modules/h6270enc.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/hx170dec.ko:system/lib/modules/hx170dec.ko 
-	
-# Smoothening + GPU touch rendering 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/etc/init.d/01-GPU_touchrender:system/etc/init.d/01-GPU_touchrender \
-    vendor/samsung/bcm21553-common/proprietary/usr/idc/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/hx170dec.ko:system/lib/modules/hx170dec.ko
 
 # USB
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/usb_tether.sh:system/etc/usb_tether.sh \
     vendor/samsung/bcm21553-common/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
-    vendor/samsung/bcm21553-common/proprietary/etc/usbconfig.sh:system/etc/usbconfig.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/usbconfig.sh:system/etc/usbconfig.sh
+
+# USB Tethering
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/bin/atx:system/bin/atx \
+    vendor/samsung/bcm21553-common/proprietary/bin/bcmtest:system/bin/bcmtest \
+    vendor/samsung/bcm21553-common/proprietary/bin/dnsProxy:system/bin/dnsProxy \
+    vendor/samsung/bcm21553-common/proprietary/bin/dun_mgr:system/bin/dun_mgr \
+    vendor/samsung/bcm21553-common/proprietary/bin/ip:system/bin/ip \
+    vendor/samsung/bcm21553-common/proprietary/bin/netd:system/bin/netd \
+    vendor/samsung/bcm21553-common/proprietary/bin/runSysCmd:system/bin/runSysCmd \
+    vendor/samsung/bcm21553-common/proprietary/bin/usb_portd:system/bin/usb_portd \
+    vendor/samsung/bcm21553-common/proprietary/etc/adb.sh:system/etc/adb.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/atmode.sh:system/etc/atmode.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/dnsmasq.conf:system/etc/dnsmasq.conf \
+    vendor/samsung/bcm21553-common/proprietary/etc/logcfg.sh:system/etc/logcfg.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/modem.sh:system/etc/modem.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/rndis.sh:system/etc/rndis.sh \
+    vendor/samsung/bcm21553-common/proprietary/etc/setusbmode.txt:system/etc/setusbmode.txt \
+
+# Common Offline charging
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/bin/charging_mode:system/bin/charging_mode \
+    vendor/samsung/bcm21553-common/proprietary/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/bcm21553-common/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
 
 # HGL
 PRODUCT_COPY_FILES += \
@@ -127,3 +141,18 @@ PRODUCT_COPY_FILES += \
     vendor/alcatel/bcm21553-common/proprietary/lib/libshoppervorbisencoder-2.so:system/lib/libshoppervorbisencoder-2.so \
     vendor/alcatel/bcm21553-common/proprietary/lib/libshopperimageutils-3.so:system/lib/libshopperimageutils-3.so \
     vendor/alcatel/bcm21553-common/proprietary/lib/libshopperzxingutils-4.so:system/lib/libshopperzxingutils-4.so
+
+# Kernel Modules
+PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/j4fs.ko:root/lib/modules/j4fs.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr.ko:recovery/root/lib/modules/fsr.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr_stl.ko:recovery/root/lib/modules/fsr_stl.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/j4fs.ko:recovery/root/lib/modules/j4fs.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_fat.ko:recovery/root/lib/modules/rfs_fat.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_glue.ko:recovery/root/lib/modules/rfs_glue.ko \
+    vendor/samsung/bcm21553-common/proprietary/lib/modules/sec_param.ko:recovery/root/lib/modules/sec_param.ko
