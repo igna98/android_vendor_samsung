@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 # Audio 
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
@@ -26,30 +25,25 @@ PRODUCT_COPY_FILES += \
     vendor/alcatel/bcm21553-common/proprietary/lib/libaudio.so:obj/lib/libaudio.so \
     vendor/alcatel/bcm21553-common/proprietary/lib/libaudioflinger.so:system/lib/libaudioflinger.so
 
-# Sensores
+# Sensors
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so \
     vendor/samsung/bcm21553-common/proprietary/bin/memsicd:system/bin/memsicd
 
 # GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/libsoc.so:system/lib/libsoc.so \
     vendor/samsung/bcm21553-common/proprietary/bin/glgps:system/bin/glgps \
     vendor/samsung/bcm21553-common/proprietary/bin/gps.cer:system/bin/gps.cer \
-    vendor/samsung/bcm21553-common/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
-    vendor/samsung/bcm21553-common/proprietary/etc/gps/glconfig2075.xml:system/etc/gps/glconfig2075.xml \
     vendor/samsung/bcm21553-common/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
-    vendor/samsung/bcm21553-common/proprietary/lib/libsoc.so:system/lib/libsoc.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
 
-# Apns config file
-PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-
-# Wifi
+# WIFI
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_aps.bin:system/etc/firmware/bcm4330_aps.bin \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_sta.bin:system/etc/firmware/bcm4330_sta.bin \
-    vendor/samsung/bcm21553-common/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/RC_248_WPA.bin:system/etc/firmware/RC_248_WPA.bin \
+    vendor/samsung/bcm21553-common/proprietary/bin/wlandutservice:system/bin/wlandutservice
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -62,45 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/bcm21553-common/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
     vendor/samsung/bcm21553-common/proprietary/bin/rild:system/bin/rild
-
-# Driver modules
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/bcm_headsetsw.ko:system/lib/modules/brcm_headsetsw.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/brcm_switch.ko:system/lib/modules/brcm_switch.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/gememalloc.ko:system/lib/modules/gememalloc.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/h6270enc.ko:system/lib/modules/h6270enc.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/hx170dec.ko:system/lib/modules/hx170dec.ko
-
-# USB
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/etc/usb_tether.sh:system/etc/usb_tether.sh \
-    vendor/samsung/bcm21553-common/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
-    vendor/samsung/bcm21553-common/proprietary/etc/usbconfig.sh:system/etc/usbconfig.sh
-
-# USB Tethering
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/bin/atx:system/bin/atx \
-    vendor/samsung/bcm21553-common/proprietary/bin/bcmtest:system/bin/bcmtest \
-    vendor/samsung/bcm21553-common/proprietary/bin/dnsProxy:system/bin/dnsProxy \
-    vendor/samsung/bcm21553-common/proprietary/bin/dun_mgr:system/bin/dun_mgr \
-    vendor/samsung/bcm21553-common/proprietary/bin/ip:system/bin/ip \
-    vendor/samsung/bcm21553-common/proprietary/bin/netd:system/bin/netd \
-    vendor/samsung/bcm21553-common/proprietary/bin/runSysCmd:system/bin/runSysCmd \
-    vendor/samsung/bcm21553-common/proprietary/bin/usb_portd:system/bin/usb_portd \
-    vendor/samsung/bcm21553-common/proprietary/etc/adb.sh:system/etc/adb.sh \
-    vendor/samsung/bcm21553-common/proprietary/etc/atmode.sh:system/etc/atmode.sh \
-    vendor/samsung/bcm21553-common/proprietary/etc/dnsmasq.conf:system/etc/dnsmasq.conf \
-    vendor/samsung/bcm21553-common/proprietary/etc/logcfg.sh:system/etc/logcfg.sh \
-    vendor/samsung/bcm21553-common/proprietary/etc/modem.sh:system/etc/modem.sh \
-    vendor/samsung/bcm21553-common/proprietary/etc/rndis.sh:system/etc/rndis.sh \
-    vendor/samsung/bcm21553-common/proprietary/etc/setusbmode.txt:system/etc/setusbmode.txt \
-
-# Common Offline charging
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/bcm21553-common/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/bcm21553-common/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
 
 # HGL
 PRODUCT_COPY_FILES += \
@@ -119,7 +74,8 @@ PRODUCT_COPY_FILES += \
     vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_color_conversion.so:system/lib/libstagefright_color_conversion.so \
     vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_enc_common.so:system/lib/libstagefright_enc_common.so \
     vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_foundation.so:system/lib/libstagefright_foundation.so \
-    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so
+    vendor/alcatel/bcm21553-common/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so
 
 # Broadcom OMX
 PRODUCT_COPY_FILES += \
@@ -147,12 +103,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/j4fs.ko:root/lib/modules/j4fs.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr.ko:recovery/root/lib/modules/fsr.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr_stl.ko:recovery/root/lib/modules/fsr_stl.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/j4fs.ko:recovery/root/lib/modules/j4fs.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_fat.ko:recovery/root/lib/modules/rfs_fat.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_glue.ko:recovery/root/lib/modules/rfs_glue.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/sec_param.ko:recovery/root/lib/modules/sec_param.ko
