@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/bin/BCM4330B1_002.001.003.0634.0652.hcd:system/bin/BCM4330B1_002.001.003.0634.0652.hcd \
     vendor/samsung/bcm21553-common/proprietary/lib/bluez-plugin/audio.so:system/lib/bluez-plugin/audio.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/bluez-plugin/input.so:system/lib/bluez-plugin/input.so \
+    vendor/samsung/bcm21553-common/proprietary/lib/bluez-plugin/input.so:system/lib/bluez-plugin/input.so
 
 # RIL
 PRODUCT_COPY_FILES += \
