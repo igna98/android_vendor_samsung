@@ -42,8 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_aps.bin:system/etc/firmware/bcm4330_aps.bin \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_sta.bin:system/etc/firmware/bcm4330_sta.bin \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt \
-    vendor/samsung/bcm21553-common/proprietary/etc/firmware/RC_248_WPA.bin:system/etc/firmware/RC_248_WPA.bin \
-    vendor/samsung/bcm21553-common/proprietary/bin/wlandutservice:system/bin/wlandutservice
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/RC_248_WPA.bin:system/etc/firmware/RC_248_WPA.bin
 
 # Bluetooth
 PRODUCT_COPY_FILES += \

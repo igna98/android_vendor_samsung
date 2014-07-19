@@ -12,4 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
+# Inherit proprietary blobs
+$(call inherit-product, vendor/samsung/cooperve/vendor_blobs.mk)

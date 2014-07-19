@@ -30,8 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Device sensores
 PRODUCT_COPY_FILES += \
-    vendor/samsung/totoro/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-    vendor/samsung/totoro/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/samsung/totoro/proprietary/lib/hw/sensors.totoro.so:system/lib/hw/sensors.totoro.so
 
 # Offline charging
 PRODUCT_COPY_FILES += \
