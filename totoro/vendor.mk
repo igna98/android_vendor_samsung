@@ -13,4 +13,4 @@
 # limitations under the License.
 
 # Inherit proprietary blobs
-$(call inherit-product, vendor/samsung/totoro/vendor_blobs.mk)
+$(call inherit-product, vendor/samsung/luisa/vendor_blobs.mk)
